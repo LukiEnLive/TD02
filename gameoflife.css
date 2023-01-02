@@ -1,6 +1,7 @@
 body {
     padding: 20px;
-    background-color: #444;
+    background-color: #fefefe;
+    text-align: center;
 }
 
 #controls {
@@ -16,7 +17,7 @@ body {
 
 svg rect {
     stroke: white;
-    fill: #C5D6D6;
+    fill: #80ca8a;
 }
 
 svg rect.alive {
