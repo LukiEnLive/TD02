@@ -100,12 +100,7 @@ function randomizeBoard() {
 }
 
 function toggleLauncher(button) {
-    if (BoardTick) {
-        window.clearInterval(BoardTick);
-        BoardTick = null;
-        button.innerHTML = 'Lancer';
-    } else {
-        BoardTick = setInterval(tick, TICK_DURATION);
-        button.innerHTML = 'Pause';
-    }
+    randomizeBoard();
+    BoardTick = setInterval(tick, TICK_DURATION);
+    button.innerHTML = 'Relancer';
 }
